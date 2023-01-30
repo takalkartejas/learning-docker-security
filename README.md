@@ -27,6 +27,7 @@ Video link - https://www.youtube.com/watch?v=KINjI1tlo2w&t=303s
 
    5. If we try to edit the text.txt file and save, it says permission denied
    6. We can use sudo but it needs password which needs to be somehow set
+   7. But with this method it is still possible to login as root by running the container directly without selecting any user.
 
 
 ---

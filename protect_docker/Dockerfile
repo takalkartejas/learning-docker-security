@@ -10,6 +10,10 @@ RUN groupadd -r tejas && useradd -r -g sudo tejas
 #If we write a random group name except alex, it will give error that group does not exist
 RUN groupadd -r alex && useradd -r -g alex alex 
 
+# block access to root when inside container using su root
+RUN chsh -s /usr/sbin/nologin root
+
+
 WORKDIR /app
 ADD . .
 # ENV HOME /root
