@@ -16,4 +16,4 @@ ADD . .
 # ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update
-RUN apt install nano
+RUN apt install nano && apt-get -y install sudo
